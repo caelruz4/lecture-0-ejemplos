@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h2>Formulario 1</h2>
+    <form>
+        <input type="text" name="nombre" placeholder="Nombre">
+        <input type="password" name="password" placeholder="Contraseña">
+        <div>
+            <input type="radio" name="rojo"> Rojo
+            <input type="radio" name="verde"> verde
+            <input type="radio" name="azul" disabled> azul
+        </div>
+        <div>
+            <input name="carrera" list="lista-carreras" placeholder="Carreras">
+            <datalist id="lista-carreras">
+                <option value="sistemas"></option>
+                <option value="computacion"></option>
+                <option value="civil"></option>
+                <option value="quimica"></option>
+                <option value="arquitectura"></option>
+
+            </datalist>
+        </div>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

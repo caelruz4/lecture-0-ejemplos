@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Selector descendiente */
+    ul li {
+      color: blue;
+    }
+
+    /* Selector hijo directo */
+    ul > li {
+      color: #170752;
+    }
+
+    /* Selector hermano adyacente */
+    li + li {
+      font-weight: bold;
+    }
+
+    /* Selector de atributo */
+    li[data-level="2"] {
+      background-color: rgb(255, 253, 188);
+    }
+
+    /* Selector de pseudoclase */
+    li:hover {
+      background-color: lightblue;
+    }
+
+    /* Selector de pseudoelemento */
+    /* Agrega un contenido adicional antes del primer párrafo en cualquier elemento <li> */
+
+    li::before {
+      content: "• ";
+    }
+  </style>
+</head>
+<body>
+
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2
+      <ul>
+        <li data-level="2">Subitem 2.1</li>
+        <li data-level="2">Subitem 2.2</li>
+      </ul>
+    </li>
+    <li>Item 3</li>
+  </ul>
+
+</body>
+</html>
